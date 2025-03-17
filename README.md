@@ -166,7 +166,7 @@ const result = useInfiniteScroll<T>(options)
 #### Return Value
 
 | Property | Type | Description
-|-----|-----|-----|-----
+|-----|-----|-----
 | `items` | `T[]` | All items including optimistic ones
 | `hasMore` | `boolean` | Whether more items are available
 | `isLoading` | `boolean` | Whether items are currently loading
