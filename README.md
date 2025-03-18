@@ -29,7 +29,7 @@ pnpm add @yourusername/nextjs-infinite-scroll
 
 ### Basic Usage with the Hook
 
-```typescriptreact
+```tsx
 "use client"
 
 import { useInfiniteScroll } from '@yourusername/nextjs-infinite-scroll'
@@ -69,7 +69,7 @@ function MyComponent() {
 
 ### Using the Component
 
-```typescriptreact
+```tsx
 "use client"
 
 import { InfiniteScroll } from '@yourusername/nextjs-infinite-scroll'
@@ -91,7 +91,7 @@ function MyComponent() {
         </div>
       )}
     />
-  )
+  );
 }
 ```
 
@@ -99,7 +99,7 @@ function MyComponent() {
 
 This library is designed to work seamlessly with Next.js App Router and React Server Components:
 
-```typescriptreact
+```tsx
 // page.tsx (Server Component)
 import { fetchInitialItems } from '@/lib/data'
 import ItemsList from './items-list'
@@ -144,7 +144,7 @@ export default function ItemsList({ initialItems }) {
 
 The core hook that provides infinite scrolling functionality.
 
-```typescriptreact
+```js
 const result = useInfiniteScroll<T>(options)
 ```
 
@@ -182,7 +182,7 @@ const result = useInfiniteScroll<T>(options)
 
 A component wrapper around the `useInfiniteScroll` hook for easier usage.
 
-```typescriptreact
+```jsx
 <InfiniteScroll<T> {...props} />
 ```
 
@@ -206,7 +206,7 @@ A component wrapper around the `useInfiniteScroll` hook for easier usage.
 
 Show placeholder items while loading more data:
 
-```typescriptreact
+```tsx
 const { items, inViewRef, isOptimisticItem } = useInfiniteScroll({
   fetchData: fetchItems,
   optimisticUpdates: true,
@@ -237,7 +237,7 @@ return (
 
 Create a manual loading experience instead of automatic loading on scroll:
 
-```typescriptreact
+```jsx
 const {
   items,
   hasMore,
@@ -271,7 +271,7 @@ return (
 
 Render items in a responsive grid:
 
-```typescriptreact
+```jsx
 <InfiniteScroll
   options={{
     fetchData: fetchItems,
