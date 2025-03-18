@@ -170,9 +170,9 @@ const result = useInfiniteScroll<T>(options)
 | `items` | `T[]` | All items including optimistic ones
 | `hasMore` | `boolean` | Whether more items are available
 | `isLoading` | `boolean` | Whether items are currently loading
-| `error` | `string | null` | Error message if any
+| `error` | `string \| null` | Error message if any
 | `loadMore` | `() => Promise<void>` | Function to load more items
-| `inViewRef` | `(node?: Element | null) => void` | Ref to attach to the last item
+| `inViewRef` | `(node?: Element \| null) => void` | Ref to attach to the last item
 | `inView` | `boolean` | Whether the last item is in view
 | `isOptimisticItem` | `(item: T) => boolean` | Whether an item is an optimistic placeholder
 | `reset` | `() => void` | Reset the infinite scroll state
