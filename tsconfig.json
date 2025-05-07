@@ -9,7 +9,7 @@
     "sourceMap": true,
     "outDir": "dist/esm",
     "strict": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

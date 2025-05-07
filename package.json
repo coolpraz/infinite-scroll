@@ -1,6 +1,6 @@
 {
   "name": "react-infinite-scroll-optimistic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A React library for implementing infinite scrolling with optimistic updates",
   "type": "module",
   "main": "dist/cjs/index.js",
@@ -23,15 +23,22 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "clean": "rimraf dist",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/coolpraz/infinite-scroll"
   },
-  "keywords": ["react", "infinite", "scroll", "optimistic", "updates"],
-  "author": "Prabhat Shahi",
+  "keywords": ["react", "infinite", "scroll", "optimistic", "updates", "react-19", "hooks"],
+  "author": "Prabhat Shahi <praz.pos@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/coolpraz/infinite-scroll#readme",
+  "bugs": {
+    "url": "https://github.com/coolpraz/infinite-scroll/issues"
+  },
   "peerDependencies": {
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0",
@@ -42,6 +49,7 @@
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+    "@changesets/cli": "^2.27.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
@@ -55,7 +63,6 @@
     "@vitest/coverage-v8": "^1.3.1",
     "@vitest/ui": "^1.3.1",
     "esbuild": "^0.20.1",
-    "esbuild-plugin-d.ts": "^1.2.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",

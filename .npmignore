@@ -1,0 +1,19 @@
+# Source
+src/
+tests/
+examples/
+
+# Config files
+.eslintrc
+.prettierrc
+vitest.config.ts
+tsconfig.json
+rollup.config.js
+build.mjs
+
+# Development files
+.github/
+.vscode/
+coverage/
+node_modules/
+*.log

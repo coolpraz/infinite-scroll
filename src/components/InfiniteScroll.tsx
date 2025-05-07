@@ -1,5 +1,4 @@
-import type React from "react"
-import { forwardRef, type ReactNode } from "react"
+import React, { forwardRef, type ReactNode } from "react"
 import type { UseInfiniteScrollResult } from "../hooks/useInfiniteScroll"
 
 export interface InfiniteScrollProps<T> {
@@ -68,7 +67,7 @@ export const InfiniteScroll = forwardRef<HTMLDivElement, InfiniteScrollProps<any
     style = {},
     children,
   }: InfiniteScrollProps<T>,
-  ref,
+  ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   const { items, loading, error, hasMore, lastItemRef } = scrollResult
 

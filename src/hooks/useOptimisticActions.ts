@@ -1,5 +1,14 @@
 "use client"
 
+// Add type declaration for useOptimistic since it's new in React 19
+// and TypeScript definitions might not be updated yet
+declare module "react" {
+  export function useOptimistic<State, Action>(
+    state: State,
+    updateFn: (state: State, action: Action) => State,
+  ): [State, (action: Action) => void]
+}
+
 import { useOptimistic } from "react"
 
 export type OptimisticActionHandler<T, A> = (currentState: T[], action: A) => T[]
