@@ -1,6 +1,6 @@
 {
   "name": "react-infinite-scroll-optimistic",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React library for implementing infinite scrolling with optimistic updates",
   "main": "dist/index.js",
   "module": "dist/esm/index.mjs",
